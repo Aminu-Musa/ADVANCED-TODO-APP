@@ -1,0 +1,173 @@
+
+:root {
+    --text_color: #1c1c1c;
+    --main_bg_color: #f0f0f0;
+    --form_bg_color: #fefefe;
+    --btn_color: #113e21;
+    --text_color: #111;
+    --form_border_color: #b38b59;
+}
+
+a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgba(24, 5, 56, 0.726), 
+    rgba(26, 13, 53, 0.705)), url('./img/bg_img2.jpg');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* =========== LANDING PAGE START=================== */
+header{
+    position: fixed;
+    width: 100%;
+    background: rgba(24, 5, 56, 0.726);
+}
+.nav_links p{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.nav_brand h1{
+ transition: 350ms;
+}
+
+.nav_brand h1:hover{
+ letter-spacing: 1.5px;
+ opacity: .7;
+}
+
+.container{
+    max-width: 950px;
+    width: 95%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: #f0f0f0;
+    margin: auto;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.nav_links ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;;
+    font-size: .9rem;
+}
+
+.nav_links ul a{
+    letter-spacing: 1px;
+    transition: 300ms;
+}
+
+.nav_links ul a:hover{
+    opacity: 0.8;
+}
+
+.form_container{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    /* height: 100%; */
+}
+
+.form_header, .create_account{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f0f0f0;
+}
+
+.create_account a:hover{
+    text-decoration: underline;
+}
+
+#login_form{
+    flex-basis: 45%;
+    margin: auto;
+    padding: 30px 20px;
+    background: rgba(26, 11, 59, 0.842);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+button{
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button#login, button#sign_up{
+    background: rgba(16, 4, 43, 0.671);
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    transition: 400ms;
+}
+
+button#login:hover, button#sign_up:hover{
+    background: rgba(8, 2, 24, 0.671); 
+    /* letter-spacing: 1px;  */
+    border: 1px solid rgba(255, 255, 255, 0.637);
+}
+
+
+input,
+button, select {
+    display: block;
+    width: 100%;
+
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: .9rem;
+    outline: none;
+}
+/* =========== LANDING PAGE END=================== */
+footer{
+    color: #fff;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer .love{
+    color: red;
+}
+
+.credit:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+
+#wrapper{
+    margin-bottom: 50px;
+}
+
+.erro_massage{
+    color: #ff0000;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    font-size: 0.8rem;
+}

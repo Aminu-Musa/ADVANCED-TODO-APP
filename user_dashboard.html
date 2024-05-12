@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user_dashboard.css">
+    <title>tod Dashboard</title>
+</head>
+<body>
+    
+<main>
+
+
+<div class="todo_list_section">
+    
+    <header class="dashboard_header">
+      
+        <div>      
+            <h3 class="dashboard"> Hi <span class="dashboard_user_name"> Aminu</span></h3>
+            <a href="index.html" class="log_out"> Logout</a>
+        </div>
+        <p class="dashboard_title">todo Dashboard</p>
+    </header>
+<!-- ==========STATISTICS SECTION====================== -->
+<div class="statistics_section">
+<div class="container">
+    <div class="card total_task">
+        <p>🗓</p>
+        <h3>Total Tasks</h3>
+        <p class="task_total">9</p>
+    </div>
+
+    <div class="card total_completed">
+        <p>🔖</p>
+        <h3>Total Task Complted</h3>
+        <p class="task_total">5</p>
+    </div>
+
+    <div class="card total_not_completed">
+        <p>📋</p>
+        <h3>Total Task Not Complted</h3>
+        <p class="task_total">8</p>
+    </div>
+</div>
+<!-- ==========STATISTICS SECTION END ====================== -->
+</div>
+
+
+<!-- ================== todo list section====================== -->
+<div class="todo_list">
+   
+    <div class="todo_list_container">
+
+        <div class="todo_card">
+            <h3 class="todo_title">Building Code-Coder Website</h3>
+            <p class="todo_task">Task: <span> Start coding today</span></p>
+            <p class="todo_status">Status: <span>pending</span></p>
+            <p class="todo_category">Catetory: <span>Personal</span></p>
+            <p class="todo_priority">Priority:<span id="priority">High</span></p>
+            <p class="todo_date">Date: <span>10-24-2023</span></p>
+            <div class="action_btns">
+                <button id="edit_todo">Edit</button>
+                <button id="delete_todo">Delete</button>
+            </div>
+        </div>
+        <div class="todo_card">
+            <h3 class="todo_title">Building Code-Coder Website</h3>
+            <p class="todo_task">Task: <span> Start coding today</span></p>
+            <p class="todo_status">Status: <span>pending</span></p>
+            <p class="todo_category">Catetory: <span>Personal</span></p>
+            <p class="todo_priority">Priority:<span id="priority_style">High</span></p>
+            <p class="todo_date">Date: <span>10-24-2023</span></p>
+            <div class="action_btns">
+                <button id="edit_todo">Edit</button>
+                <button id="delete_todo">Delete</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+<!-- FORM SECTION -->
+<div class="todo_form_section">
+    <form action="">
+        <div class="form-group">
+            <label for="todo__title">Todo title</label>
+            <input type="text" name="" id="todo__title" placeholder="enter todo title">
+        </div>
+
+        <div class="form-group">
+            <label for="todo__task">Task</label>
+            <input type="text" name="" id="todo__task" placeholder="enter todo title">
+        </div>
+        
+        <div class="form-group">
+            <label for="todo__status">Status</label>
+            <select name="" id="todo__status">
+                <option value="Completed" >Completed</option>
+                <option value="Not completed">Not completed</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="todo__category">Category</label>
+            <select name="" id="todo__category">
+                <option value="Personal" >Personal</option>
+                <option value="Organizational">Organizational</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="todo__priority">Priority</label>
+            <select name="" id="todo__priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="todo__due_date">Due date</label>
+            <input type="date" name="" id="todo__due_date">
+        </div>
+
+        <div class="form-group">
+            <label for="todo__due_time">Due time</label>
+            <input type="time" name="" id="todo__due_time">
+            
+        </div>
+
+        <div class="form-group">
+            <label for="todo__due_time">Create at</label>
+            <input type="datetime-local" name="" id="todo__due_time">
+        </div>
+
+    <button id="add_todo">Add todo</button>
+    </form>
+</div>
+
+</main>
+
+
+
+
+<script src="app.js"></script>
+<script src="create_todo.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
